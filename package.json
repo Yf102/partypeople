@@ -7,7 +7,9 @@
     "build:production": "cp .env.production .env.local && next build",
     "build": "cp .env.development .env.local && next build",
     "start": "next start",
-    "lint": "next lint"
+    "prepare": "husky install",
+    "type-check": "tsc --noemit",
+    "lint": "npm run type-check && next lint --max-warnings=1 --fix"
   },
   "dependencies": {
     "next": "12.3.0",
@@ -17,6 +19,7 @@
     "@reduxjs/toolkit": "1.8.5"
   },
   "devDependencies": {
+    "husky": "8.0.1",
     "@types/node": "18.7.18",
     "@types/react": "18.0.20",
     "@types/react-dom": "18.0.6",
