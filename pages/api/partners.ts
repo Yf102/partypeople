@@ -20,7 +20,7 @@ export default async function handler(
     .split('\n')
     .filter((partnerStr) => !!partnerStr)
     .map((partner) => {
-      let _partner = JSON.parse(partner)
+      const _partner = JSON.parse(partner)
       _partner.latitude = Number(_partner.latitude)
       _partner.longitude = Number(_partner.longitude)
       return _partner
