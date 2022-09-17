@@ -1,8 +1,6 @@
 export type GreatCircleParamType = {
-  name1: string
   latitude1_deg: number
   longitude1_deg: number
-  name2: string
   latitude2_deg: number
   longitude2_deg: number
 }
