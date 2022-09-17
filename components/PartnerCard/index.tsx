@@ -15,7 +15,9 @@ const PartnerCard = (p: PartnerCardType) => {
       <Icon className='opacity-30' width={42} height={42} icon={'icon_user'} />
       <div className={cn(styles.paragraph)}>{p.id}</div>
       <h1 className='text-xl'>{p.name}</h1>
-      <div className={cn(styles.paragraph, 'mb-0')}>{p.distance} km</div>
+      <div className={cn(styles.paragraph, 'mb-0')}>
+        {Number(p.distance.toFixed(3))} km
+      </div>
     </div>
   )
 }

@@ -34,12 +34,11 @@ const Home = ({ partners }: IndexProps) => {
         return {
           id: partner.partner_id,
           name: partner.name,
-          distance: Number(
-            calcGreatCircle(gcParams).distance_kilometres.toFixed(3)
-          ),
+          distance: calcGreatCircle(gcParams).distance_kilometres,
         }
       })
       .filter((partner) => partner.distance <= 100)
+      .sort((p1, p2) => p1.id - p2.id)
     setPd(_pd)
   }, [partners])
 
