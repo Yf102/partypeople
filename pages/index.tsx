@@ -13,7 +13,7 @@ type IndexProps = {
 
 const LATITUDE_PSI_SOFIA = 42.6665921
 const LONGITUDE_PSI_SOFIA = 23.351723
-const sofiaOffice = {
+const SOFIA_OFFICE = {
   name: 'PSInteractive',
   latitude: LATITUDE_PSI_SOFIA,
   longitude: LONGITUDE_PSI_SOFIA,
@@ -25,8 +25,8 @@ const Home = ({ partners }: IndexProps) => {
     const _pd = partners
       .map((partner) => {
         const gcParams: GreatCircleParamType = {
-          latitude1_deg: sofiaOffice.latitude,
-          longitude1_deg: sofiaOffice.longitude,
+          latitude1_deg: SOFIA_OFFICE.latitude,
+          longitude1_deg: SOFIA_OFFICE.longitude,
           latitude2_deg: partner.latitude,
           longitude2_deg: partner.longitude,
         }
