@@ -2,6 +2,11 @@
 @import 'tailwindcss/components.css';
 @import 'tailwindcss/utilities.css';
 
+html {
+  --card-color-light: #570ca2;
+  --paragraph-text-color: rgba(255, 255, 255, 0.7);
+}
+
 html,
 body {
   padding: 0;
@@ -25,6 +30,6 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background-color: rgb(76, 6, 145)
   }
 }

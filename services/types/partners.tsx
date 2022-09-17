@@ -8,7 +8,7 @@ export type PartnerType = {
 
 export type PartnerApiType = PartnerType[]
 
-export type PartnerDistanceType = {
+export type PartnerCardType = {
   id: number
   name: string
   distance: number

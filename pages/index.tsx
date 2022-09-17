@@ -1,14 +1,11 @@
 import styles from '../styles/Home.module.css'
 import { getPartners } from 'services/partners'
 import store from 'store/store'
-import {
-  PartnerApiType,
-  PartnerDistanceType,
-  PartnerType,
-} from 'services/types/partners'
+import { PartnerApiType, PartnerCardType } from 'services/types/partners'
 import { useEffect, useState } from 'react'
 import { calcGreatCircle } from 'utils/helpers/great-circle-distance'
 import { GreatCircleParamType } from 'services/types/greatCircle'
+import PartnerCard from 'components/PartnerCard'
 
 type IndexProps = {
   partners: PartnerApiType
@@ -23,7 +20,7 @@ const sofiaOffice = {
 }
 
 const Home = ({ partners }: IndexProps) => {
-  const [pd, setPd] = useState<PartnerDistanceType[]>([])
+  const [pd, setPd] = useState<PartnerCardType[]>([])
   useEffect(() => {
     const _pd = partners
       .map((partner) => {
@@ -37,7 +34,9 @@ const Home = ({ partners }: IndexProps) => {
         return {
           id: partner.partner_id,
           name: partner.name,
-          distance: calcGreatCircle(gcParams).distance_kilometres,
+          distance: Number(
+            calcGreatCircle(gcParams).distance_kilometres.toFixed(3)
+          ),
         }
       })
       .filter((partner) => partner.distance <= 100)
@@ -46,17 +45,20 @@ const Home = ({ partners }: IndexProps) => {
 
   return (
     <div className={styles.container}>
-      <ol>
-        {pd.map((p, i) => {
-          return (
-            <div key={i}>
-              <div>Id: {p.id}</div>
-              <div>Name: {p.name}</div>
-              <div>Distance: {p.distance} km</div>
-            </div>
-          )
-        })}
-      </ol>
+      <div className='grid grid-cols-12 auto-rows-max mx-auto max-w-3xl'>
+        <div className='col-span-12 px-3 md:px-6'>
+          {pd.map((p, i) => {
+            return (
+              <PartnerCard
+                key={i}
+                id={p.id}
+                distance={p.distance}
+                name={p.name}
+              />
+            )
+          })}
+        </div>
+      </div>
     </div>
   )
 }
