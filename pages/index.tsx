@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css'
 import { getPartners } from 'services/partners'
 import store from 'store/store'
-import { PartnerApiType, PartnerCardType } from 'services/types/partners'
+import { PartnerCardType } from 'services/types/partners'
 import { useEffect, useState } from 'react'
 import { calcGreatCircle } from 'utils/helpers/great-circle-distance'
 import { GreatCircleParamType } from 'services/types/greatCircle'
