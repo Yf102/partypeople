@@ -18,7 +18,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps & InputCustomProps>(
 
     return (
       <div className='w-full pt-0 mb-3'>
-        {label && <label>{label}</label>}
+        {label && <label data-testid='input-label-element'>{label}</label>}
         <input
           ref={ref}
           {...props}
