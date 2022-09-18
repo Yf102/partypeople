@@ -16,6 +16,7 @@ import {
 } from 'services/types/home'
 import HomeForm from 'components/HomeForm'
 import EmptyCard from 'components/EmptyCard'
+import { getPartnersFromFile } from 'utils/helpers/partners'
 
 const Home = ({ partners }: IndexProps) => {
   const {
@@ -91,15 +92,20 @@ const Home = ({ partners }: IndexProps) => {
 
 export default Home
 
-// For SSR (performance gain)
+// For SSR (performance gain with prerendering the page)
 export const getStaticProps = async () => {
   const { dispatch } = store
+  const isBuild = process.env.DEPLOYMENT === 'build'
 
   const { data: partners } = await dispatch(getPartners.initiate(null))
 
+  // AS IT IS LOCALHOST API WILL NOT BE RUNNING DURING THE BUILD
+  let partnersBuild
+  if (isBuild) partnersBuild = await getPartnersFromFile()
+
   return {
     props: {
-      partners,
+      partners: isBuild ? partnersBuild : partners,
     },
     revalidate: 86400,
   }

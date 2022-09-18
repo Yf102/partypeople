@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "cp .env.development .env.local && next dev",
-    "build:production": "cp .env.production .env.local && next build",
-    "build": "cp .env.development .env.local && next build",
+    "build": "cp .env.production .env.local && next build",
     "start": "next start",
     "prepare": "husky install",
     "type-check": "tsc --noemit",
