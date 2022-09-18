@@ -43,7 +43,7 @@ const Home = ({ partners }: IndexProps) => {
   }, [partners])
 
   return (
-    <div className={styles.container}>
+    <div data-testid='home-element' className={styles.container}>
       <div className='grid grid-cols-12 auto-rows-max mx-auto max-w-3xl'>
         <div className='col-span-12 px-3 md:px-6'>
           {pd.map((p, i) => {

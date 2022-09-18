@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage It renders Home page 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+    data-testid="home-element"
+  >
+    <div
+      class="grid grid-cols-12 auto-rows-max mx-auto max-w-3xl"
+    >
+      <div
+        class="col-span-12 px-3 md:px-6"
+      >
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            1
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Jamelia Waller
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            11.732 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            3
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Gracie-Leigh Mccallum
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            6.513 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            8
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Ffion Firth
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            5.531 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            12
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Bluebell Robles
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            4.766 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            27
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Francisco Fleming
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            25.46 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            28
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Romy Harrison
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            12.497 km
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
