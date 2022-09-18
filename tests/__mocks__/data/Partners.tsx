@@ -1,4 +1,10 @@
-import { PartnerApiType } from 'services/types/partners'
+import { PartnerApiType, PartnerCardType } from 'services/types/partners'
+
+const SinglePartner: PartnerCardType = {
+  id: 1,
+  name: 'Jamelia Waller',
+  distance: 11.731624145288764,
+}
 
 const Partners: PartnerApiType = [
   {
@@ -55,6 +61,139 @@ const Partners: PartnerApiType = [
     name: 'Francisco Fleming',
     longitude: 23.0519972,
   },
+  {
+    latitude: 42.7724527,
+    partner_id: 6,
+    name: 'Jodie Dyer',
+    longitude: 23.3558937,
+  },
+  {
+    latitude: 42.6634102,
+    partner_id: 9,
+    name: 'Billie-Jo Dunlap',
+    longitude: 23.2681108,
+  },
+  {
+    latitude: 42.7242457,
+    partner_id: 10,
+    name: 'Sachin Chan',
+    longitude: 23.2441588,
+  },
+  {
+    latitude: 42.6893403,
+    partner_id: 4,
+    name: 'Lorelei Compton',
+    longitude: 27.7060827,
+  },
+  {
+    latitude: 42.2676642,
+    partner_id: 5,
+    name: 'Margot Mckay',
+    longitude: 23.6067589,
+  },
+  {
+    latitude: 42.6612057,
+    partner_id: 11,
+    name: 'Una Beach',
+    longitude: 23.4147793,
+  },
+  {
+    latitude: 43.2232383,
+    partner_id: 31,
+    name: 'Nadia Danabasheva',
+    longitude: 27.8828709,
+  },
+  { latitude: 43, partner_id: 13, name: 'Nur Combs', longitude: 24 },
+  {
+    latitude: 42.6843963,
+    partner_id: 14,
+    name: 'Vincenzo Conner',
+    longitude: 23.1631643,
+  },
+  {
+    latitude: 42.8192476,
+    partner_id: 15,
+    name: 'Oliwia Trujillo',
+    longitude: 27.881862,
+  },
+  {
+    latitude: 42.6405549,
+    partner_id: 16,
+    name: 'Maddy Novak',
+    longitude: 23.3344239,
+  },
+  {
+    latitude: 42.6545333,
+    partner_id: 17,
+    name: 'Kodi Collier',
+    longitude: 23.4078409,
+  },
+  {
+    latitude: 42.5854492,
+    partner_id: 39,
+    name: 'Patience Lyon',
+    longitude: 23.4156356,
+  },
+  {
+    latitude: 42.2608727,
+    partner_id: 18,
+    name: 'Vladimir Vasov',
+    longitude: 23.1252358,
+  },
+  {
+    latitude: 42.8182819,
+    partner_id: 24,
+    name: 'Rada Ilieva',
+    longitude: 23.3608871,
+  },
+  {
+    latitude: 42.7571084,
+    partner_id: 19,
+    name: 'Butterfree Crackersprout',
+    longitude: 23.4299324,
+  },
+  {
+    latitude: 42.7232749,
+    partner_id: 20,
+    name: 'Oscarbait Crackersprout',
+    longitude: 23.2586465,
+  },
+  {
+    latitude: 42.7074332,
+    partner_id: 21,
+    name: 'Bendydick Chickenstrips',
+    longitude: 23.1480301,
+  },
+  {
+    latitude: 42.8884016,
+    partner_id: 22,
+    name: 'Billybong Clombyclomp',
+    longitude: 24.7147034,
+  },
+  {
+    latitude: 42.4229411,
+    partner_id: 29,
+    name: 'Wellington Crackerjack',
+    longitude: 25.6399245,
+  },
+  {
+    latitude: 42.6479375,
+    partner_id: 30,
+    name: 'Bunsenburner Crumplehorn',
+    longitude: 23.2782796,
+  },
+  {
+    latitude: 43.2023394,
+    partner_id: 23,
+    name: 'Buckminster Fullerene',
+    longitude: 27.9086398,
+  },
+  {
+    latitude: 42.6604717,
+    partner_id: 25,
+    name: 'Bombadil Rivendell',
+    longitude: 23.4641794,
+  },
 ]
 
-export { Partners }
+export { Partners, SinglePartner }

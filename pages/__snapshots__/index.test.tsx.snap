@@ -14,6 +14,7 @@ exports[`HomePage It renders Home page 1`] = `
       >
         <div
           class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
         >
           <img
             alt=""
@@ -44,6 +45,7 @@ exports[`HomePage It renders Home page 1`] = `
         </div>
         <div
           class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
         >
           <img
             alt=""
@@ -74,6 +76,69 @@ exports[`HomePage It renders Home page 1`] = `
         </div>
         <div
           class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            5
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Margot Mckay
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            49.044 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            6
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Jodie Dyer
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            11.776 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
         >
           <img
             alt=""
@@ -104,6 +169,100 @@ exports[`HomePage It renders Home page 1`] = `
         </div>
         <div
           class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            9
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Billie-Jo Dunlap
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            6.846 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            10
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Sachin Chan
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            10.88 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            11
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Una Beach
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            5.191 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
         >
           <img
             alt=""
@@ -134,6 +293,317 @@ exports[`HomePage It renders Home page 1`] = `
         </div>
         <div
           class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            13
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Nur Combs
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            64.566 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            14
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Vincenzo Conner
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            15.541 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            16
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Maddy Novak
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            3.222 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            17
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Kodi Collier
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            4.781 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            18
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Vladimir Vasov
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            48.79 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            19
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Butterfree Crackersprout
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            11.922 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            20
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Oscarbait Crackersprout
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            9.879 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            21
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Bendydick Chickenstrips
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            17.257 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            24
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Rada Ilieva
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            16.884 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            25
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Bombadil Rivendell
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            9.22 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
         >
           <img
             alt=""
@@ -164,6 +634,7 @@ exports[`HomePage It renders Home page 1`] = `
         </div>
         <div
           class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
         >
           <img
             alt=""
@@ -190,6 +661,68 @@ exports[`HomePage It renders Home page 1`] = `
             class="paragraph mb-0"
           >
             12.497 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            30
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Bunsenburner Crumplehorn
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            6.354 km
+          </div>
+        </div>
+        <div
+          class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"
+          data-testid="partner-card-element"
+        >
+          <img
+            alt=""
+            class="opacity-30"
+            data-nimg="future"
+            decoding="async"
+            height="42"
+            src="/icons/icon_user.svg"
+            srcset="/icons/icon_user.svg 1x, /icons/icon_user.svg 2x"
+            style="color: transparent;"
+            width="42"
+          />
+          <div
+            class="paragraph"
+          >
+            39
+          </div>
+          <h1
+            class="text-xl"
+          >
+            Patience Lyon
+          </h1>
+          <div
+            class="paragraph mb-0"
+          >
+            10.428 km
           </div>
         </div>
       </div>

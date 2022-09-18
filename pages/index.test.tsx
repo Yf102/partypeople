@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, screen, waitFor } from 'tests/test-utils'
+import { render, screen } from 'tests/test-utils'
 import { Partners } from 'tests/__mocks__/data/Partners'
 import Home from 'pages/index'
 

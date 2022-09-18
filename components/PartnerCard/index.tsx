@@ -7,6 +7,7 @@ import Icon from 'components/Icon'
 const PartnerCard = (p: PartnerCardType) => {
   return (
     <div
+      data-testid='partner-card-element'
       className={cn(
         styles['light'],
         'col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4'
