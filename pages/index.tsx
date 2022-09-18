@@ -15,6 +15,7 @@ import {
   MainLocation,
 } from 'services/types/home'
 import HomeForm from 'components/HomeForm'
+import EmptyCard from 'components/EmptyCard'
 
 const Home = ({ partners }: IndexProps) => {
   const {
@@ -71,17 +72,17 @@ const Home = ({ partners }: IndexProps) => {
             errors={errors}
           />
           {mainLocation &&
-            pd.length > 0 &&
-            pd.map((p, i) => {
-              return (
-                <PartnerCard
-                  key={i}
-                  id={p.id}
-                  distance={p.distance}
-                  name={p.name}
-                />
-              )
-            })}
+            ((pd.length > 0 &&
+              pd.map((p, i) => {
+                return (
+                  <PartnerCard
+                    key={i}
+                    id={p.id}
+                    distance={p.distance}
+                    name={p.name}
+                  />
+                )
+              })) || <EmptyCard />)}
         </div>
       </div>
     </div>
