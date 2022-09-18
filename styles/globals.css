@@ -5,6 +5,8 @@
 html {
   --card-color-light: #570ca2;
   --paragraph-text-color: rgba(255, 255, 255, 0.7);
+  --purple: #4c0691;
+  --bg-color: var(--purple);
 }
 
 html,

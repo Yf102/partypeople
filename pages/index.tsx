@@ -6,27 +6,45 @@ import { useEffect, useState } from 'react'
 import { calcGreatCircle } from 'utils/helpers/great-circle-distance'
 import { GreatCircleParamType } from 'services/types/greatCircle'
 import PartnerCard from 'components/PartnerCard'
-
-type IndexProps = {
-  partners: PartnerApiType
-}
-
-const LATITUDE_PSI_SOFIA = 42.6665921
-const LONGITUDE_PSI_SOFIA = 23.351723
-const SOFIA_OFFICE = {
-  name: 'PSInteractive',
-  latitude: LATITUDE_PSI_SOFIA,
-  longitude: LONGITUDE_PSI_SOFIA,
-}
+import { homeSchema } from 'utils/schemas/home'
+import { yupResolver } from '@hookform/resolvers/yup'
+import { useForm, SubmitHandler } from 'react-hook-form'
+import {
+  ContactsFormInput,
+  IndexProps,
+  MainLocation,
+} from 'services/types/home'
+import HomeForm from 'components/HomeForm'
 
 const Home = ({ partners }: IndexProps) => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<ContactsFormInput>({
+    resolver: yupResolver(homeSchema()),
+  })
+
+  const [mainLocation, setMainLocation] = useState<MainLocation | undefined>()
   const [pd, setPd] = useState<PartnerCardType[]>([])
+
+  const onSubmit: SubmitHandler<ContactsFormInput> = async (info) => {
+    if (info.latitude && info.longitude) {
+      setMainLocation({
+        name: 'PSInteractive',
+        latitude: info.latitude,
+        longitude: info.longitude,
+      })
+    }
+  }
+
   useEffect(() => {
+    if (!partners || !mainLocation) return
     const _pd = partners
       .map((partner) => {
         const gcParams: GreatCircleParamType = {
-          latitude1_deg: SOFIA_OFFICE.latitude,
-          longitude1_deg: SOFIA_OFFICE.longitude,
+          latitude1_deg: mainLocation.latitude,
+          longitude1_deg: mainLocation.longitude,
           latitude2_deg: partner.latitude,
           longitude2_deg: partner.longitude,
         }
@@ -40,22 +58,30 @@ const Home = ({ partners }: IndexProps) => {
       .filter((partner) => partner.distance <= 100)
       .sort((p1, p2) => p1.id - p2.id)
     setPd(_pd)
-  }, [partners])
+  }, [partners, mainLocation])
 
   return (
     <div data-testid='home-element' className={styles.container}>
       <div className='grid grid-cols-12 auto-rows-max mx-auto max-w-3xl'>
         <div className='col-span-12 px-3 md:px-6'>
-          {pd.map((p, i) => {
-            return (
-              <PartnerCard
-                key={i}
-                id={p.id}
-                distance={p.distance}
-                name={p.name}
-              />
-            )
-          })}
+          <HomeForm
+            register={register}
+            handleSubmit={handleSubmit}
+            onSubmit={onSubmit}
+            errors={errors}
+          />
+          {mainLocation &&
+            pd.length > 0 &&
+            pd.map((p, i) => {
+              return (
+                <PartnerCard
+                  key={i}
+                  id={p.id}
+                  distance={p.distance}
+                  name={p.name}
+                />
+              )
+            })}
         </div>
       </div>
     </div>
