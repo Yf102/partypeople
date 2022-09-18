@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HomePage It renders Home page 1`] = `
+exports[`PartnerCard It renders PartnerCard 1`] = `
 <DocumentFragment>
   <div
     class="light col-span-12 col-start-1 text-center block rounded-lg px-8 py-10 mb-4"

@@ -4,8 +4,8 @@ import { render, screen } from 'tests/test-utils'
 import PartnerCard from 'components/PartnerCard/index'
 import { SinglePartner } from 'tests/__mocks__/data/Partners'
 
-describe('HomePage', () => {
-  it('It renders Home page', async () => {
+describe('PartnerCard', () => {
+  it('It renders PartnerCard', async () => {
     const { asFragment } = render(
       <PartnerCard
         id={SinglePartner.id}
